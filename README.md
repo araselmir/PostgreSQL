@@ -32,16 +32,17 @@ Advanced users can also download a <a href="https://www.enterprisedb.com/downloa
 <h3> 2. Ubuntu </h3>
 PostgreSQL is available in all Ubuntu versions by default. However, Ubuntu "snapshots" a specific version of PostgreSQL that is then supported throughout the lifetime of that Ubuntu version. Other versions of PostgreSQL are available through the PostgreSQL apt repository.
 </br></br>
-<pre id="script-box" class="code"># Create the file repository configuration:
+<pre id="script-box" class="code">
+# Create the file repository configuration:
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
 
-Import the repository signing key:
+#Import the repository signing key:
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
-Update the package lists:
+#Update the package lists:
 sudo apt-get update
 
-Install the latest version of PostgreSQL.
-If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
+#Install the latest version of PostgreSQL.
+#If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
 sudo apt-get install postgresql</pre>
 For more information about the apt repository, including answers to frequent questions, please see the <a href="https://wiki.postgresql.org/wiki/Apt">PostgreSQL Apt Repository</a>  page on the wiki.
