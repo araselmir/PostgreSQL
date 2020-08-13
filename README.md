@@ -46,3 +46,15 @@ sudo apt-get update
 #If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
 sudo apt-get install postgresql</pre>
 For more information about the apt repository, including answers to frequent questions, please see the <a href="https://wiki.postgresql.org/wiki/Apt">PostgreSQL Apt Repository</a>  page on the wiki.
+</br>
+<h3> 3. Mac OS </h3>
+</br>
+PostgreSQL is the default database on macOS Server as of OS X Server version 10.7. macOS without the macOS Server add-on installed includes only the PostgreSQL libpq shared library.
+</br>
+macOS Server 10.12 ships with PostgreSQL 9.4. Minor updates are provided by Apple, but not necessarily right after a new PostgreSQL minor release.
+</br>
+There are several other installers available for PostgreSQL on macOS, which is the recommended way to install.
+</br>
+<a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">Download the installer</a> certified by EDB for all supported PostgreSQL versions.
+</br>
+Advanced users can also download a<a href="https://www.enterprisedb.com/download-postgresql-binaries"> zip</a> archive of the binaries, without the installer. This download is intended for users who wish to include PostgreSQL as part of another application installer.
