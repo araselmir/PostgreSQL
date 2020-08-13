@@ -17,7 +17,6 @@ PostgreSQL tries to conform with the <a href="https://www.postgresql.org/docs/cu
 </br>
 <h1> PostgreSQL Install </h1>
 </br>
-</br>
 <h3> 1. Windows </h3>
 <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">Download the installer</a> certified by EDB for all supported PostgreSQL versions.
 </br>
