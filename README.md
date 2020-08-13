@@ -21,7 +21,6 @@ PostgreSQL tries to conform with the <a href="https://www.postgresql.org/docs/cu
 <h3> 1. Windows </h3>
 <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">Download the installer</a> certified by EDB for all supported PostgreSQL versions.
 </br>
-</br>
 This installer includes the PostgreSQL server, pgAdmin; a graphical tool for managing and developing your databases, and StackBuilder; a package manager that can be used to download and install additional PostgreSQL tools and drivers. Stackbuilder includes management, integration, migration, replication, geospatial, connectors and other tools.
 </br> </br>
 This installer can run in graphical or silent install modes.
@@ -36,13 +35,13 @@ PostgreSQL is available in all Ubuntu versions by default. However, Ubuntu "snap
 <pre id="script-box" class="code"># Create the file repository configuration:
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt $(lsb_release -cs)-pgdg main" &gt; /etc/apt/sources.list.d/pgdg.list'
 
-# Import the repository signing key:
+Import the repository signing key:
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
-# Update the package lists:
+Update the package lists:
 sudo apt-get update
 
-# Install the latest version of PostgreSQL.
-# If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
+Install the latest version of PostgreSQL.
+If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
 sudo apt-get install postgresql</pre>
 For more information about the apt repository, including answers to frequent questions, please see the <a href="https://wiki.postgresql.org/wiki/Apt">PostgreSQL Apt Repository</a>  page on the wiki.
