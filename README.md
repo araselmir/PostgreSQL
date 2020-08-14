@@ -77,4 +77,63 @@ First of all open the SQL Shell(psql)
 psql -h host_name -p port_name -U user_name database_name
 
 </code>
+</br>
+<p>Now type command  <code> help </code> </p>
+
+![Screenshot (11)](https://user-images.githubusercontent.com/62602944/90256036-ecda9580-de66-11ea-93d8-c89a77e1a545.png)
+
+<p> For help with psql comands type  <code> \? </code> </p>
+
+![Screenshot (12)](https://user-images.githubusercontent.com/62602944/90263650-c3733700-de71-11ea-91f0-6b9ed7762945.png)
+
+<p> Show the list of database type <code> \l </code> </p>
+
+![Screenshot (13)](https://user-images.githubusercontent.com/62602944/90263670-c9691800-de71-11ea-86f2-c63e82d13835.png)
+
+<p> For create Database type <code> CREATE DATABASE database_name; </code> </p>
+
+![Screenshot (14)](https://user-images.githubusercontent.com/62602944/90263682-cec66280-de71-11ea-8f83-6c3c438b0b08.png)
+
+<p> For delete database type <code> DROP DATABASE database_name; </code></p>
+
+![Screenshot (16)](https://user-images.githubusercontent.com/62602944/90263717-dd147e80-de71-11ea-822c-996da3821d5c.png)
+
+<p> If you want to connect any databse type <code> \c database_name </code></p>
+
+![Screenshot (18)](https://user-images.githubusercontent.com/62602944/90263764-ec93c780-de71-11ea-8b5a-0f2c0dcdfb7b.png)
+
+<p> If you create database table type </p> </br><pre>
+<code> CREATE TABLE table_name (
+col_name_01 data_type if_any,
+col_name_02 data_type if_any,
+col_name_03 data_type if_any,
+col_name_04 data_type if_any,
+);
+</code></pre>
+
+![Screenshot (20)](https://user-images.githubusercontent.com/62602944/90263799-fb7a7a00-de71-11ea-89e9-863fc15b0a71.png)
+
+<p> If you want to see list of relation type <code> \d </code> </p>
+  
+![Screenshot (21)](https://user-images.githubusercontent.com/62602944/90263822-0208f180-de72-11ea-93b6-af3ea78d2231.png)
+  
+<p> If you want to see database table type<code> \d table_name </code> </p>
+
+![Screenshot (22)](https://user-images.githubusercontent.com/62602944/90263843-07663c00-de72-11ea-8050-91908165b670.png)
+
+<p> If you want to add table valu type </p> </br><pre>
+<code> INSERT INTO table_name (col_01,col_02,col_03.....)        
+VALUES ('col_01_values','col_02_values','col_03_values',......);</code></pre>
+
+![Screenshot (23)](https://user-images.githubusercontent.com/62602944/90263855-0c2af000-de72-11ea-89ff-74f48830fa25.png)
+
+<p> If want to see the full table type  <code> SELECT * FROM table_name; </code></p>
+
+![Screenshot (24)](https://user-images.githubusercontent.com/62602944/90263863-10efa400-de72-11ea-9f1d-5a69520e3c56.png)
+
+<p> If you want to delete table type <code> DROP TABLE table_name;</code> </p>
+  
+![Screenshot (25)](https://user-images.githubusercontent.com/62602944/90263873-15b45800-de72-11ea-8500-5d52a6ae058e.png)
+  
+  
 
