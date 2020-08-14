@@ -57,3 +57,24 @@ There are several other installers available for PostgreSQL on macOS, which is t
 <a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">Download the installer</a> certified by EDB for all supported PostgreSQL versions.
 </br>
 Advanced users can also download a<a href="https://www.enterprisedb.com/download-postgresql-binaries"> zip</a> archive of the binaries, without the installer. This download is intended for users who wish to include PostgreSQL as part of another application installer.
+<h1> Basic Comands in Windows </h1>
+First of all open the SQL Shell(psql)
+</br>
+<p>If <code>login</code> option is not given, the role is not permitted to login. Similarly, other options give permission of the features to the roles.</p>
+</br>
+<p>For adding password separately the following command can be used:</p>
+</br><pre><code>\password USER_NAME
+
+</code></pre>
+<p>Then password and confirmation of password will be asked. Note that, whatever you type in the command will not be shown. The same command can be used for password update as well.</p>
+<h2> Conecting to the DB Server </h2>
+<p>From Command Prompt an user can connect with the following command:</p>
+<code>psql -d database_name -U user_name
+
+</code>
+<p>For remote login, host and port should also be given:</p>
+<code>
+psql -h host_name -p port_name -U user_name database_name
+
+</code>
+
